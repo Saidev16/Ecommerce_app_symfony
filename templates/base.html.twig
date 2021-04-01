@@ -31,7 +31,7 @@
     <!-- Custom styles for this template -->
     <link href="{{ asset('assets/css/carousel.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100" >
 <header>
 
     
@@ -43,7 +43,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Nos Produits</a>
+                    <a class="nav-link" href=" {{path('products')}} ">Nos Produits</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Que sommes-nous?</a>
