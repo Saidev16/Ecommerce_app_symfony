@@ -66,6 +66,9 @@
 </header>
 
 <main role="main">
+    <div id="app">
+        <App />
+    </div>
 
     {% if block('carousel') is defined %}
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -127,5 +130,6 @@
 </main>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.js') }}"></script>
+{{ encore_entry_script_tags('app') }}
 </body>
 </html>
